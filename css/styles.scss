@@ -15,64 +15,62 @@ body {
   background-color: $background1;
   margin: 0;
   padding: 0;
-}
 
-.mainContainer{
+  #firstBlock{
+    background-color: $background3;
+    color: $highlight1;
+    padding-top: 45px;
+    text-align: center;
 
-}
+   }
 
-.subtext{
-  color: $hightlight2;
-}
+  #secondBlock{
+    background-image: url('../img/logo.png');
+    background-attachment: fixed;
+    background-color: $background2;
+    color: $highlight1;
+    padding-top: 45px;
+    text-align: center;
+  }
 
-.logo{
-  height: 50px;
-  padding: 0px;
-  padding-left: 5px;
+  #thirdBlock{
 
-}
+    background-attachment: fixed;
+    color: $highlight1;
+    padding-top: 45px;
+    text-align: center;
+  }
 
-.contentImage{
-  padding-left: 30%;
-  padding-right: 30%;
-}
+  .logo{
+    height: 50px;
+    padding: 0px;
+    padding-left: 5px;
+  }
+  .subtext{
+    color: $hightlight2;
+  }
 
-.colItem{
+  .contentImage{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 
-  transition:background-color 1s ease-in;
-}
-img{
-  transition:background-color 0.5s ease-in;
-}
-.colItem:hover{
-  color: $hoverText;
-  background-color: $backgroundHover;
-}
-img:hover{
-  color: $hoverText;
-  background-color: $backgroundHover;
-}
+  .colItem{
+    transition:background-color 1s ease-in;
+  }
 
+  .colItem:hover{
+    color: $hoverText;
+    background-color: $backgroundHover;
+  }
 
+  img{
+    transition:background-color 0.5s ease-in;
+  }
 
-#mainBlock{
-  background-color: $background3;
-  color: $highlight1;
-  padding-top: 45px;
-  text-align: center;
+  img:hover{
+    color: $hoverText;
+    background-color: $backgroundHover;
+  }
 
- }
-#secondBlock{
-  background-color: $background2;
-  color: $highlight1;
-  padding-top: 45px;
-  text-align: center;
-}
-#thirdBlock{
-  background-image: url('../img/logo.png');
-  background-attachment: fixed;
-
-   color: $highlight1;
-  padding-top: 45px;
-  text-align: center;
 }

@@ -3,50 +3,41 @@ body {
   background-color: #00101d;
   margin: 0;
   padding: 0; }
-
-.subtext {
-  color: #f765b8; }
-
-.logo {
-  height: 50px;
-  padding: 0px;
-  padding-left: 5px; }
-
-.contentImage {
-  padding-left: 30%;
-  padding-right: 30%; }
-
-.colItem {
-  transition: background-color 1s ease-in; }
-
-img {
-  transition: background-color 0.5s ease-in; }
-
-.colItem:hover {
-  color: #f98dc9;
-  background-color: #2c30c8; }
-
-img:hover {
-  color: #f98dc9;
-  background-color: #2c30c8; }
-
-#mainBlock {
-  background-color: #818181;
-  color: #27fdf5;
-  padding-top: 45px;
-  text-align: center; }
-
-#secondBlock {
-  background-color: #002f53;
-  color: #27fdf5;
-  padding-top: 45px;
-  text-align: center; }
-
-#thirdBlock {
-  background-image: url("../img/logo.png");
-  background-attachment: fixed;
-  color: #27fdf5;
-  padding-top: 45px;
-  text-align: center; }
+  body #firstBlock {
+    background-color: #818181;
+    color: #27fdf5;
+    padding-top: 45px;
+    text-align: center; }
+  body #secondBlock {
+    background-image: url("../img/logo.png");
+    background-attachment: fixed;
+    background-color: #002f53;
+    color: #27fdf5;
+    padding-top: 45px;
+    text-align: center; }
+  body #thirdBlock {
+    background-attachment: fixed;
+    color: #27fdf5;
+    padding-top: 45px;
+    text-align: center; }
+  body .logo {
+    height: 50px;
+    padding: 0px;
+    padding-left: 5px; }
+  body .subtext {
+    color: #f765b8; }
+  body .contentImage {
+    padding-left: 30%;
+    padding-right: 30%; }
+  body .colItem {
+    transition: background-color 1s ease-in; }
+  body .colItem:hover {
+    color: #f98dc9;
+    background-color: #2c30c8; }
+  body img {
+    transition: background-color 0.5s ease-in; }
+  body img:hover {
+    color: #f98dc9;
+    background-color: #2c30c8; }
 
 /*# sourceMappingURL=styles.css.map */
