@@ -8,6 +8,11 @@ body {
     color: #27fdf5;
     padding-top: 45px;
     text-align: center; }
+    body #firstBlock img {
+      transition: background-color 0.5s ease-in; }
+    body #firstBlock img:hover {
+      color: #f98dc9;
+      background-color: #2c30c8; }
   body #secondBlock {
     background-image: url("../img/logo.png");
     background-attachment: fixed;
@@ -20,6 +25,9 @@ body {
     color: #27fdf5;
     padding-top: 45px;
     text-align: center; }
+  body iframe {
+    width: 50%;
+    height: 80%; }
   body .logo {
     height: 50px;
     padding: 0px;
@@ -32,11 +40,6 @@ body {
   body .colItem {
     transition: background-color 1s ease-in; }
   body .colItem:hover {
-    color: #f98dc9;
-    background-color: #2c30c8; }
-  body img {
-    transition: background-color 0.5s ease-in; }
-  body img:hover {
     color: #f98dc9;
     background-color: #2c30c8; }
 

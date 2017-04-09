@@ -22,7 +22,16 @@ body {
     padding-top: 45px;
     text-align: center;
 
-   }
+    img{
+      transition:background-color 0.5s ease-in;
+    }
+
+    img:hover{
+      color: $hoverText;
+      background-color: $backgroundHover;
+    }
+
+  }
 
   #secondBlock{
     background-image: url('../img/logo.png');
@@ -40,7 +49,11 @@ body {
     padding-top: 45px;
     text-align: center;
   }
+  iframe{
 
+    width: 50%;
+    height: 80%;
+  }
   .logo{
     height: 50px;
     padding: 0px;
@@ -63,14 +76,4 @@ body {
     color: $hoverText;
     background-color: $backgroundHover;
   }
-
-  img{
-    transition:background-color 0.5s ease-in;
-  }
-
-  img:hover{
-    color: $hoverText;
-    background-color: $backgroundHover;
-  }
-
 }
