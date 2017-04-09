@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="../lib/jquery/jquery-3.2.0.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <img class="navbar-brand logo" src="img/logo2.png">
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid " id="mainBlock">
+      <h1> This is a TITLE.</h1>
+      <h3 class="subtext"> This is some text.</h3>
+      <img class="img-responsive contentImage"src="img/logo.png">
+      <div class="row">
+        <!--  bootstrap used a 12 column grid. 1 is the smalles and 12 of these will equal a line.
+              12 is the largest and 1 of these will equal a line. 12/4 = 3, meaning 3 of the size 4 will fit in a line -->
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+      </div>
+
+    </div>
+    <div class="container-fluid" id="secondBlock">
+      <h1> This is a second TITLE.</h1>
+      <h3 class="subtext"> This is some other text.</h3>
+      <img class="img-responsive contentImage"src="img/TheseNights.jpg">
+      <div class="row">
+        <!--  bootstrap used a 12 column grid. 1 is the smalles and 12 of these will equal a line.
+              12 is the largest and 1 of these will equal a line. 12/4 = 3, meaning 3 of the size 4 will fit in a line -->
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+      </div>
+      <div class="row">
+        <!--  You can also have unequal rows so different elements take up different amount of space.  -->
+        <div class="col-sm-4 colItem"><h3>.col-sm-4</h3></div>
+        <div class="col-sm-8 colItem"><h3>.col-sm-8</h3></div>
+      </div>
+    </div>
+    <div class="container-fluid" id="thirdBlock">
+      <h1> This is a THIRD TITLE.</h1>
+
+
+      <div class="row">
+        <!--  bootstrap used a 12 column grid. 1 is the smalles and 12 of these will equal a line.
+              12 is the largest and 1 of these will equal a line. 12/4 = 3, meaning 3 of the size 4 will fit in a line -->
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+        <div class="col-sm-4 colItem"><h3>.col-sm-4<h3></div>
+      </div>
+      <div class="row">
+        <!--  You can also have unequal rows so different elements take up different amount of space.  -->
+        <div class="col-sm-4 colItem"><h3>.col-sm-4</h3></div>
+        <div class="col-sm-8 colItem"><h3>.col-sm-8</h3></div>
+      </div>
+    </div>
+  </body>
+</html>
