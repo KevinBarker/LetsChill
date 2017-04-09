@@ -1,54 +1,78 @@
-$background: #00101d;
-body{
-  background-color: $background;
+
+/*Colour Variables*/
+
+$background1: #00101d;
+$background2: #002f53;
+$background3: #818181;
+
+$highlight1: #27fdf5 ;
+$hightlight2: #f765b8;
+
+$backgroundHover: #2c30c8;
+$hoverText: #f98dc9;
+
+body {
+  background-color: $background1;
   margin: 0;
   padding: 0;
 }
+
 .mainContainer{
-/*  background-color: #002f53;*/
 
 }
+
 .subtext{
-  color: #f765b8;
+  color: $hightlight2;
 }
+
 .logo{
   height: 50px;
   padding: 0px;
   padding-left: 5px;
 
 }
+
 .contentImage{
   padding-left: 30%;
   padding-right: 30%;
 }
-@import "compass/css3";
+
 .colItem{
 
   transition:background-color 1s ease-in;
 }
-.colItem:hover{
-  color: #f98dc9;
-  background-color: #2c30c8;
+img{
+  transition:background-color 0.5s ease-in;
 }
+.colItem:hover{
+  color: $hoverText;
+  background-color: $backgroundHover;
+}
+img:hover{
+  color: $hoverText;
+  background-color: $backgroundHover;
+}
+
+
+
 #mainBlock{
-  background-color: gray;
-  color: #27fdf5;
+  background-color: $background3;
+  color: $highlight1;
   padding-top: 45px;
   text-align: center;
 
  }
-
 #secondBlock{
-  background-color: #002f53;
-  color: #27fdf5;
+  background-color: $background2;
+  color: $highlight1;
   padding-top: 45px;
   text-align: center;
 }
 #thirdBlock{
-  background-image: url('img/logo.png');
+  background-image: url('../img/logo.png');
   background-attachment: fixed;
 
-   color: #27fdf5;
+   color: $highlight1;
   padding-top: 45px;
   text-align: center;
 }

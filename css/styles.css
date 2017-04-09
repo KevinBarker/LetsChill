@@ -1,10 +1,8 @@
+/*Colour Variables*/
 body {
   background-color: #00101d;
   margin: 0;
   padding: 0; }
-
-.mainContainer {
-  /*  background-color: #002f53;*/ }
 
 .subtext {
   color: #f765b8; }
@@ -21,12 +19,19 @@ body {
 .colItem {
   transition: background-color 1s ease-in; }
 
+img {
+  transition: background-color 0.5s ease-in; }
+
 .colItem:hover {
   color: #f98dc9;
   background-color: #2c30c8; }
 
+img:hover {
+  color: #f98dc9;
+  background-color: #2c30c8; }
+
 #mainBlock {
-  background-color: gray;
+  background-color: #818181;
   color: #27fdf5;
   padding-top: 45px;
   text-align: center; }
@@ -38,7 +43,7 @@ body {
   text-align: center; }
 
 #thirdBlock {
-  background-image: url("img/logo.png");
+  background-image: url("../img/logo.png");
   background-attachment: fixed;
   color: #27fdf5;
   padding-top: 45px;
