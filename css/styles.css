@@ -1,3 +1,4 @@
+/*To compile scss file with ruby on windows: sass --compass --watch styles.scss:styles.css*/
 /*Colour Variables*/
 body {
   background-color: #00101d;
@@ -14,8 +15,13 @@ body {
       color: #f98dc9;
       background-color: #2c30c8; }
   body #secondBlock {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/record.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: #002f53;
     color: #27fdf5;
     padding-top: 45px;

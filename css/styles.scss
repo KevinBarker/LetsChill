@@ -1,4 +1,4 @@
-
+/*To compile scss file with ruby on windows: sass --compass --watch styles.scss:styles.css*/
 /*Colour Variables*/
 
 $background1: #00101d;
@@ -9,7 +9,8 @@ $highlight1: #27fdf5 ;
 $hightlight2: #f765b8;
 
 $backgroundHover: #2c30c8;
-$hoverText: #f98dc9;
+$hoverText: #f98dc9; 
+
 
 body {
   background-color: $background1;
@@ -34,8 +35,14 @@ body {
   }
 
   #secondBlock{
-    background-image: url('../img/logo.png');
+
+    background-image: url('../img/record.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: $background2;
     color: $highlight1;
     padding-top: 45px;

@@ -1,0 +1,58 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5vw;
+  background-color: #282c34;
+}
+@media only screen and (max-width: 650px) {
+    #logo {
+       margin-top: 40%;
+    }
+}
+body{
+  background-color: #282c34;
+}
+#logo{
+  width: 100%;
+  text-align: center;
+}
+.flexParent{
+  width: 100%;
+}
+.flexChild{
+  margin-right: 1%;
+  text-align: center;
+  color: #d162d4;
+
+}
+.flexChild#subtext{
+  color: #41f2fc;
+}
+.arrow{
+	width:3%;
+	margin-left:50%;
+	 transform: translate(-50%) ;
+}
+#article{
+	margin-top: 30%;
+	margin-bottom: 30%;
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+}
+.articleFlex{
+
+
+	text-align: center;
+	width: 20%;
+}
+.flexImage{
+  border-style: solid;
+  border-color: black;
+	width: 100%;
+
+
+}
