@@ -4,6 +4,8 @@ body {
   background-color: #00101d;
   margin: 0;
   padding: 0; }
+  body .navbar-collapse {
+    text-align: center; }
   body #firstBlock {
     background-color: #818181;
     color: #27fdf5;
@@ -14,6 +16,18 @@ body {
     body #firstBlock img:hover {
       color: #f98dc9;
       background-color: #2c30c8; }
+    body #firstBlock .outer {
+      display: table;
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+    body #firstBlock .middle {
+      display: table-cell;
+      vertical-align: middle; }
+    body #firstBlock .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%; }
   body #secondBlock {
     background-image: url("../img/record.jpg");
     background-repeat: no-repeat;
@@ -31,13 +45,24 @@ body {
     color: #27fdf5;
     padding-top: 45px;
     text-align: center; }
+  body .navbar .logo {
+    height: 60px;
+    padding: 5px;
+    padding-left: 10px; }
+  body .navbar .fa {
+    color: #27fdf5;
+    font-size: 2em;
+    transition: color 0.2s ease-in; }
+  body .navbar .navElement {
+    height: 100%;
+    transition: background-color 0.2s ease-in; }
+    body .navbar .navElement:hover {
+      background-color: #818181; }
+      body .navbar .navElement:hover .fa {
+        color: #f98dc9; }
   body iframe {
     width: 50%;
     height: 80%; }
-  body .logo {
-    height: 50px;
-    padding: 0px;
-    padding-left: 5px; }
   body .subtext {
     color: #f765b8; }
   body .contentImage {
