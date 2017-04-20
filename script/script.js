@@ -25,3 +25,13 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+function updateVideo() {
+        var video = $('#video').get(0);
+        var videoLength = video.duration;
+        var scrollPosition = $(document).scrollTop();
+        video.currentTime = (scrollPosition / ($(document).height() - $(window).height())) * videoLength;//(scrollPosition / SCROLL_SCRUB_SPEED) % videoLength;
+}
+$(window).scroll(function() {
+         updateVideo();
+    });

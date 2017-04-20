@@ -7,12 +7,34 @@ body {
   body .navbar-collapse {
     text-align: center; }
   body #firstBlock {
+    padding: 0px;
     background-color: #818181;
     color: #27fdf5;
     padding-top: 45px;
     text-align: center; }
+    body #firstBlock #video {
+      position: fixed;
+      margin: 0%;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+      background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+      background-size: cover;
+      transition: 1s opacity; }
     body #firstBlock img {
       transition: background-color 0.5s ease-in; }
+    body #firstBlock #set-height {
+      display: block; }
+    body #firstBlock #v0 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%; }
     body #firstBlock img:hover {
       color: #f98dc9;
       background-color: #2c30c8; }
