@@ -21,7 +21,7 @@ body {
   }
 
   #firstBlock{
-    padding: 0px;
+    
     #video{
         position: fixed;
         margin: 0%;
@@ -50,12 +50,7 @@ body {
     #set-height {
       display: block;
     }
-    #v0 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
+
 
     img:hover{
       color: $hoverText;
