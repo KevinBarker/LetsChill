@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="lib/fonts/font-awesome/css/font-awesome.min.css">
     <script src="lib/jquery/jquery-3.2.0.min.js"></script>
     <script src="lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-    <script src="script/script.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-
+    
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -39,7 +37,7 @@
                 </a>
             </li>
             <li class="navElement">
-                <a href="https://twitter.com/LetsChillCanada" target="_blank">
+                <a href="https://www.facebook.com/letschillcanada/" target="_blank">
                     <i class="fa fa-twitter"   aria-hidden="true"></i>
                 </a>
             </li>
@@ -47,19 +45,24 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="firstBlock">
-        <video id="video" autoplay="autoplay" loop="loop">
-
-
-            
-            <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+    <div class="container-full " id="firstBlock">
+        <video id="video" tabindex="0" autobuffer="autobuffer" preload="preload"><source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="img/letschill.webm">
         </video>
-    </div>
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
 
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" id="secondBlock">
 
-        <iframe class="insta" frameborder="0" scrolling="no" src="https://www.instagram.com/p/BSTr8D0BYTo/embed/"></iframe>
+    </div>
+    <div class="container-fluid" id="thirdBlock">
+      <h1> This is a THIRD TITLE.</h1>
+        <iframe frameborder="0" scrolling="no" class="embed-responsive-item text-center" src="https://www.instagram.com/p/BSTr8D0BYTo/embed/"></ifram>
     </div>
   </body>
-
+  <script src="script/script2.js"></script>
 </html>

@@ -4,8 +4,10 @@
 $background1: #00101d;
 $background2: #002f53;
 $background3: #818181;
+
 $highlight1: #27fdf5 ;
 $hightlight2: #f765b8;
+
 $backgroundHover: #2c30c8;
 $hoverText: #f98dc9;
 
@@ -19,46 +21,82 @@ body {
   }
 
   #firstBlock{
-
-      position: absolute;
-      z-index: -1;
-      top: 0px;
-      left: 0px;
-      bottom: 0px;
-      right: 0px;
-      overflow: hidden;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-image: none;
-
-      #video{
-
-         margin: auto;
-         position: absolute;
-         z-index: -1;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         visibility: visible;
-         width: auto;
-         height: 962px;
+    
+    #video{
+        position: fixed;
+        margin: 0%;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+    }
 
 
-      }
+    background-color: $background3;
+    color: $highlight1;
+    padding-top: 45px;
+    text-align: center;
+
+    img{
+      transition:background-color 0.5s ease-in;
+    }
+    #set-height {
+      display: block;
+    }
+
+
+    img:hover{
+      color: $hoverText;
+      background-color: $backgroundHover;
+    }
+    .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
   }
 
   #secondBlock{
+
+    background-image: url('../img/record.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: $background2;
+    color: $highlight1;
+    padding-top: 45px;
+    text-align: center;
+  }
+
+  #thirdBlock{
 
     background-attachment: fixed;
     color: $highlight1;
     padding-top: 45px;
     text-align: center;
-  }
-  .insta{
-      height: 800px;
-      width: 50%;
-      height: 80%;
   }
   .navbar{
       .logo{
@@ -83,7 +121,10 @@ body {
           }
       }
   }
-
+  iframe{
+    width: 50%;
+    height: 80%;
+  }
 
   .subtext{
     color: $hightlight2;
