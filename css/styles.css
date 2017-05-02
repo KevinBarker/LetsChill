@@ -7,60 +7,36 @@ body {
   body .navbar-collapse {
     text-align: center; }
   body #firstBlock {
-    background-color: #818181;
-    color: #27fdf5;
-    padding-top: 45px;
-    text-align: center; }
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none; }
     body #firstBlock #video {
-      position: fixed;
-      margin: 0%;
+      margin: auto;
+      position: absolute;
+      z-index: -1;
       top: 50%;
       left: 50%;
-      min-width: 100%;
-      min-height: 100%;
+      transform: translate(-50%, -50%);
+      visibility: visible;
       width: auto;
-      height: auto;
-      z-index: -100;
-      transform: translateX(-50%) translateY(-50%);
-      background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
-      background-size: cover;
-      transition: 1s opacity; }
-    body #firstBlock img {
-      transition: background-color 0.5s ease-in; }
-    body #firstBlock #set-height {
-      display: block; }
-    body #firstBlock img:hover {
-      color: #f98dc9;
-      background-color: #2c30c8; }
-    body #firstBlock .outer {
-      display: table;
-      position: absolute;
-      height: 100%;
-      width: 100%; }
-    body #firstBlock .middle {
-      display: table-cell;
-      vertical-align: middle; }
-    body #firstBlock .inner {
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%; }
+      height: 962px; }
   body #secondBlock {
-    background-image: url("../img/record.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #002f53;
-    color: #27fdf5;
-    padding-top: 45px;
-    text-align: center; }
-  body #thirdBlock {
     background-attachment: fixed;
     color: #27fdf5;
     padding-top: 45px;
     text-align: center; }
+  body .insta {
+    height: 800px;
+    width: 50%;
+    height: 80%; }
   body .navbar .logo {
     height: 60px;
     padding: 5px;
@@ -76,9 +52,6 @@ body {
       background-color: #818181; }
       body .navbar .navElement:hover .fa {
         color: #f98dc9; }
-  body iframe {
-    width: 50%;
-    height: 80%; }
   body .subtext {
     color: #f765b8; }
   body .contentImage {
